@@ -5,11 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test don't using",
-    "build": "webpack --mode=production --node-env=production",
-    "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
-    "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "build": "NODE_ENV=production webpack --mode production",
   },
   "repository": {
     "type": "git",
