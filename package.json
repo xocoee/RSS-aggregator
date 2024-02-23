@@ -1,0 +1,24 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "RSS aggregator",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test don't using"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xocoee/frontend-project-11.git"
+  },
+  "author": "xocoee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xocoee/frontend-project-11/issues"
+  },
+  "homepage": "https://github.com/xocoee/frontend-project-11#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
