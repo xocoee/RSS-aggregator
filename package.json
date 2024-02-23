@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test don't using",
-    "build": "NODE_ENV=production webpack --mode production",
+    "build": "NODE_ENV=production webpack --mode production"
   },
   "repository": {
     "type": "git",
