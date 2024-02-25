@@ -1,4 +1,5 @@
 import 'bootstrap';
 import './styles.scss';
+import watchers from './watchers.js';
 
-console.log('Hello Wolrld!');
+watchers();
