@@ -12,4 +12,4 @@ RSS aggregator can which collect RSS feeds and then watched for a new posts.
 
 Install dependencies and let your system run the package.
 
-![img.png](media/showWork.png) 
+![img.png](media/showWork.png)
