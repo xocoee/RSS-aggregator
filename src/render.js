@@ -115,10 +115,9 @@ const renderState = (elements, i18next, value) => {
     case 'sending':
       renderSending(elements, i18next);
       break;
-    case 'added': {
+    case 'added':
       renderAdded(elements, i18next);
       break;
-    }
     default:
       break;
   }
@@ -165,6 +164,8 @@ const render = (state, elements, i18next) => (path, value) => {
       renderFeeds(state, elements, i18next);
       break;
     case 'posts':
+      renderPosts(state, elements, i18next);
+      break;
     case 'uiState.viewedPostIds':
       renderPosts(state, elements, i18next);
       break;

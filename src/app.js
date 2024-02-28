@@ -73,7 +73,10 @@ const app = () => {
 
   const state = {
     formState: 'filling',
-    error: null,
+    errors: {
+      validation: null,
+      addingFeed: null,
+    },
     feeds: [],
     posts: [],
     uiState: {
@@ -121,7 +124,7 @@ const app = () => {
             return getData(input);
           })
           .then((response) => {
-            const { feed, posts } = parse(response.data.contents);
+            const { feed, posts } = parse(response.data.contents, input);
             handleData({ feed, posts }, watchedState);
             watchedState.formState = 'added';
           })

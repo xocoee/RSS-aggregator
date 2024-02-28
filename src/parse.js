@@ -11,7 +11,7 @@ const parsePost = (post) => {
   };
 };
 
-const parse = (rss) => {
+const parse = (rss, url) => {
   const parser = new DOMParser();
   const data = parser.parseFromString(rss, 'text/xml');
   const parseError = data.querySelector('parsererror');
@@ -23,10 +23,9 @@ const parse = (rss) => {
 
   const feedTitle = data.querySelector('title').textContent;
   const feedDescription = data.querySelector('description').textContent;
-  const feed = { title: feedTitle, description: feedDescription };
   const posts = [...data.querySelectorAll('item')].map(parsePost);
 
-  return { feed, posts };
+  return { feed: { link: url, title: feedTitle, description: feedDescription }, posts };
 };
 
 export default parse;
