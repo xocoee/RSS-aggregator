@@ -121,8 +121,9 @@ const app = () => {
             return getData(input);
           })
           .then((response) => {
-            const data = parse(response.data.contents);
-            handleData(data, watchedState);
+            const { feed, posts } = parse(response.data.contents, input);
+            feed.link = input;
+            handleData({ feed, posts }, watchedState);
             watchedState.formState = 'added';
           })
           .catch((error) => {

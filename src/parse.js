@@ -21,12 +21,13 @@ const parse = (rss) => {
     throw error;
   }
 
-  const feedTitle = data.querySelector('title').textContent;
-  const feedDescription = data.querySelector('description').textContent;
-  const feed = { title: feedTitle, description: feedDescription };
+  // const feedTitle = data.querySelector('title').textContent;
+  // const feedDescription = data.querySelector('description').textContent;
+  // const feed = { title: feedTitle, description: feedDescription };
 
   const posts = [...data.querySelectorAll('item')].map(parsePost);
-  return { feed, posts };
+  // return { feed, posts };
+  return posts;
 };
 
 export default parse;
