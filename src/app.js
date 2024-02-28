@@ -121,7 +121,7 @@ const app = () => {
             return getData(input);
           })
           .then((response) => {
-            const data = parse(response.data.contents, input);
+            const data = parse(response.data.contents);
             handleData(data, watchedState);
             watchedState.formState = 'added';
           })
