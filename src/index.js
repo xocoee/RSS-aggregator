@@ -1,5 +1,5 @@
 import 'bootstrap';
 import './styles.scss';
-import watchers from './watchers.js';
+import app from './app.js';
 
-watchers();
+app();
