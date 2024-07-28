@@ -100,7 +100,7 @@ const app = () => {
 
   const i18nextInstance = i18next.createInstance();
   i18nextInstance.init({
-    lng: 'eu',
+    lng: 'en',
     debug: false,
     resources,
   })

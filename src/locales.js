@@ -1,5 +1,5 @@
 const locales = {
-  eu: {
+  en: {
     translation: {
       errors: {
         notUrl: 'The link must be a valid URL',
