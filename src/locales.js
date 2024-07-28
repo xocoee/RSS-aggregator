@@ -1,24 +1,24 @@
 const locales = {
-  ru: {
+  eu: {
     translation: {
       errors: {
-        notUrl: 'Ссылка должна быть валидным URL',
-        alreadyInList: 'RSS уже существует',
-        notRss: 'Ресурс не содержит валидный RSS',
-        networkError: 'Ошибка сети',
-        unknown: 'Что-то пошло не так',
-        empty: 'Не должно быть пустым',
+        notUrl: 'The link must be a valid URL',
+        alreadyInList: 'RSS already exists',
+        notRss: 'The resource does not contain a valid RSS',
+        networkError: 'Network error',
+        unknown: 'Something went wrong',
+        empty: 'Must not be empty',
       },
       status: {
-        sending: 'RSS загружается',
-        success: 'RSS успешно загружен',
+        sending: 'RSS is loading',
+        success: 'RSS successfully loaded',
       },
       items: {
-        feeds: 'Фиды',
-        posts: 'Посты',
+        feeds: 'Feeds',
+        posts: 'Posts',
       },
       buttons: {
-        view: 'Просмотр',
+        view: 'View',
       },
     },
   },
