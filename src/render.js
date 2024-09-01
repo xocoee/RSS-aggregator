@@ -23,7 +23,7 @@ const createButton = (post, i18next) => {
   buttonEl.setAttribute('data-bs-toggle', 'modal');
   buttonEl.setAttribute('data-bs-target', '#modal');
   buttonEl.classList.add('btn', 'btn-outline-primary', 'btn-sm');
-  buttonEl.textContent = i18next.t('Просмотр');
+  buttonEl.textContent = i18next.t('Viewing');
   return buttonEl;
 };
 
